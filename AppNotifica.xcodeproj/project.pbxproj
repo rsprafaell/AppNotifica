@@ -13,6 +13,27 @@
 		D31EE3D22AFE67D00034A6FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D31EE3D02AFE67D00034A6FA /* Main.storyboard */; };
 		D31EE3D42AFE67D10034A6FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D31EE3D32AFE67D10034A6FA /* Assets.xcassets */; };
 		D31EE3D72AFE67D10034A6FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D31EE3D52AFE67D10034A6FA /* LaunchScreen.storyboard */; };
+<<<<<<< Updated upstream
+=======
+		D31EE3E32AFE71690034A6FA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31EE3E22AFE71690034A6FA /* LoginView.swift */; };
+		D31EE3E52AFE717C0034A6FA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31EE3E42AFE717C0034A6FA /* LoginViewController.swift */; };
+		D31EE3E72AFE718E0034A6FA /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31EE3E62AFE718E0034A6FA /* Coordinator.swift */; };
+		D31EE3E92AFE719B0034A6FA /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31EE3E82AFE719B0034A6FA /* LoginCoordinator.swift */; };
+		D393D9272B07A5A800858ED5 /* ImageDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = D393D9262B07A5A800858ED5 /* ImageDefault.swift */; };
+		D393D92B2B07AA4500858ED5 /* ImageLabelDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = D393D92A2B07AA4500858ED5 /* ImageLabelDefault.swift */; };
+		D393D92D2B0B882D00858ED5 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D393D92C2B0B882D00858ED5 /* RegisterView.swift */; };
+		D393D92F2B0B884200858ED5 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D393D92E2B0B884200858ED5 /* RegisterViewController.swift */; };
+		D393D9312B0B889A00858ED5 /* RegisterCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D393D9302B0B889A00858ED5 /* RegisterCoordinator.swift */; };
+		D393D9332B0B8F7300858ED5 /* LabelDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = D393D9322B0B8F7300858ED5 /* LabelDefault.swift */; };
+		D393D9352B0E3B4E00858ED5 /* TextFieldDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = D393D9342B0E3B4E00858ED5 /* TextFieldDefault.swift */; };
+		D393D9372B0E41B100858ED5 /* ButtonDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = D393D9362B0E41B100858ED5 /* ButtonDefault.swift */; };
+		D393D9392B10D5E200858ED5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D393D9382B10D5E200858ED5 /* HomeView.swift */; };
+		D393D93B2B10D65F00858ED5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D393D93A2B10D65F00858ED5 /* HomeViewController.swift */; };
+		D393D93D2B10DB1A00858ED5 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D393D93C2B10DB1A00858ED5 /* HomeCoordinator.swift */; };
+		D393D93F2B14C07E00858ED5 /* ViewControllerDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = D393D93E2B14C07E00858ED5 /* ViewControllerDefault.swift */; };
+		D393D9412B14C1CC00858ED5 /* ViewDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = D393D9402B14C1CC00858ED5 /* ViewDefault.swift */; };
+		D3E93C372B02692100B668B3 /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E93C362B02692100B668B3 /* Color+.swift */; };
+>>>>>>> Stashed changes
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +45,27 @@
 		D31EE3D32AFE67D10034A6FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D31EE3D62AFE67D10034A6FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D31EE3D82AFE67D10034A6FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+<<<<<<< Updated upstream
+=======
+		D31EE3E22AFE71690034A6FA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		D31EE3E42AFE717C0034A6FA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D31EE3E62AFE718E0034A6FA /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		D31EE3E82AFE719B0034A6FA /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		D393D9262B07A5A800858ED5 /* ImageDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDefault.swift; sourceTree = "<group>"; };
+		D393D92A2B07AA4500858ED5 /* ImageLabelDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLabelDefault.swift; sourceTree = "<group>"; };
+		D393D92C2B0B882D00858ED5 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		D393D92E2B0B884200858ED5 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		D393D9302B0B889A00858ED5 /* RegisterCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCoordinator.swift; sourceTree = "<group>"; };
+		D393D9322B0B8F7300858ED5 /* LabelDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelDefault.swift; sourceTree = "<group>"; };
+		D393D9342B0E3B4E00858ED5 /* TextFieldDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldDefault.swift; sourceTree = "<group>"; };
+		D393D9362B0E41B100858ED5 /* ButtonDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDefault.swift; sourceTree = "<group>"; };
+		D393D9382B10D5E200858ED5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D393D93A2B10D65F00858ED5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D393D93C2B10DB1A00858ED5 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		D393D93E2B14C07E00858ED5 /* ViewControllerDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDefault.swift; sourceTree = "<group>"; };
+		D393D9402B14C1CC00858ED5 /* ViewDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDefault.swift; sourceTree = "<group>"; };
+		D3E93C362B02692100B668B3 /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
+>>>>>>> Stashed changes
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +106,68 @@
 				D31EE3D52AFE67D10034A6FA /* LaunchScreen.storyboard */,
 				D31EE3D82AFE67D10034A6FA /* Info.plist */,
 			);
+<<<<<<< Updated upstream
 			path = AppNotifica;
+=======
+			path = Resource1;
+			sourceTree = "<group>";
+		};
+		D31EE3DF2AFE71390034A6FA /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				D393D9252B07A53A00858ED5 /* Infrastructure */,
+				D3E93C352B0268F600B668B3 /* Extensions */,
+				D31EE3E02AFE71410034A6FA /* Controller */,
+				D31EE3E12AFE714F0034A6FA /* Coordinator */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		D31EE3E02AFE71410034A6FA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D31EE3E22AFE71690034A6FA /* LoginView.swift */,
+				D31EE3E42AFE717C0034A6FA /* LoginViewController.swift */,
+				D393D92C2B0B882D00858ED5 /* RegisterView.swift */,
+				D393D92E2B0B884200858ED5 /* RegisterViewController.swift */,
+				D393D9382B10D5E200858ED5 /* HomeView.swift */,
+				D393D93A2B10D65F00858ED5 /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D31EE3E12AFE714F0034A6FA /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				D31EE3E62AFE718E0034A6FA /* Coordinator.swift */,
+				D31EE3E82AFE719B0034A6FA /* LoginCoordinator.swift */,
+				D393D9302B0B889A00858ED5 /* RegisterCoordinator.swift */,
+				D393D93C2B10DB1A00858ED5 /* HomeCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		D393D9252B07A53A00858ED5 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				D393D9262B07A5A800858ED5 /* ImageDefault.swift */,
+				D393D92A2B07AA4500858ED5 /* ImageLabelDefault.swift */,
+				D393D9322B0B8F7300858ED5 /* LabelDefault.swift */,
+				D393D9342B0E3B4E00858ED5 /* TextFieldDefault.swift */,
+				D393D9362B0E41B100858ED5 /* ButtonDefault.swift */,
+				D393D93E2B14C07E00858ED5 /* ViewControllerDefault.swift */,
+				D393D9402B14C1CC00858ED5 /* ViewDefault.swift */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		D3E93C352B0268F600B668B3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D3E93C362B02692100B668B3 /* Color+.swift */,
+			);
+			path = Extensions;
+>>>>>>> Stashed changes
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +242,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				D31EE3CF2AFE67D00034A6FA /* ViewController.swift in Sources */,
+<<<<<<< Updated upstream
 				D31EE3CB2AFE67D00034A6FA /* AppDelegate.swift in Sources */,
+=======
+				D393D93F2B14C07E00858ED5 /* ViewControllerDefault.swift in Sources */,
+				D393D9312B0B889A00858ED5 /* RegisterCoordinator.swift in Sources */,
+				D3E93C372B02692100B668B3 /* Color+.swift in Sources */,
+				D393D92F2B0B884200858ED5 /* RegisterViewController.swift in Sources */,
+				D393D93B2B10D65F00858ED5 /* HomeViewController.swift in Sources */,
+				D393D9392B10D5E200858ED5 /* HomeView.swift in Sources */,
+				D31EE3CB2AFE67D00034A6FA /* AppDelegate.swift in Sources */,
+				D31EE3E92AFE719B0034A6FA /* LoginCoordinator.swift in Sources */,
+				D393D92B2B07AA4500858ED5 /* ImageLabelDefault.swift in Sources */,
+				D393D9412B14C1CC00858ED5 /* ViewDefault.swift in Sources */,
+				D31EE3E72AFE718E0034A6FA /* Coordinator.swift in Sources */,
+				D393D9272B07A5A800858ED5 /* ImageDefault.swift in Sources */,
+				D31EE3E32AFE71690034A6FA /* LoginView.swift in Sources */,
+				D31EE3E52AFE717C0034A6FA /* LoginViewController.swift in Sources */,
+				D393D9332B0B8F7300858ED5 /* LabelDefault.swift in Sources */,
+>>>>>>> Stashed changes
 				D31EE3CD2AFE67D00034A6FA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
