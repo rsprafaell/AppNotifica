@@ -8,8 +8,8 @@
 import Foundation
 import UIKit
 
-class RegisterView: UIView {
-
+class RegisterView: ViewDefault {
+/*
 // MARK: - Initializers
     
     var  onLoginTap: (() -> Void)?
@@ -31,10 +31,14 @@ class RegisterView: UIView {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+*/
+    
+//MARK: - Clouseres
+   var  onLoginTap: (() -> Void)?
     
 // MARK: - Setup Visual Elements
-    
-    func setupVisualElement() {
+   // tirei a funcao daqui e joguei pra baixo se não dá erro com a configuraçao do botao 'seguinte do teclado 
+  // override func setupVisualElement() {
         
         let imageLabel = LabelDefault(text: "Entre com seu e-mail e crie uma senha para se registrar!", fontName: "", fontSize: 30)
         
@@ -95,6 +99,13 @@ class RegisterView: UIView {
             
             return button
         }()
+        
+    override func setupVisualElement() {
+       
+        super.setupVisualElement()
+            emailTextField.delegate = self
+            senhaTextField.delegate = self
+            confirmaSenhaTextField.delegate = self
         
         // adiciona todos os elementos visuais a view
         self.addSubview(imageLabel)
@@ -158,5 +169,23 @@ class RegisterView: UIView {
           }
     
 }
-
+extension RegisterView: UITextFieldDelegate {
+    
+        
+        //configura o botão seguinte do teclado
+        func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+            
+            if textField == emailTextField {
+                self.senhaTextField.becomeFirstResponder()
+                
+            } else if textField == senhaTextField {
+                self.confirmaSenhaTextField.becomeFirstResponder()
+                
+            } else {
+                textField.resignFirstResponder()
+            }
+            
+            return true
+        }
+    }
 

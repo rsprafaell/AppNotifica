@@ -17,7 +17,7 @@ class LoginView: ViewDefault {
     
 // MARK: - Setup Visual Elements
     
-    override func setupVisualElement() {
+  //  override func setupVisualElement() {
         
         // Usando o Default:
         
@@ -29,7 +29,7 @@ class LoginView: ViewDefault {
         let imageLabel = ImageLabelDefault(text: "Registre e gerencie as ocorrências do seu IF!")
         
         // cria funçao com as propriedades da caixa de texto email
-        let emailTextField = TextFieldDefault(text: "Login")
+        let emailTextField = TextFieldDefault(text: "Login", keyboardType: .emailAddress, returnKeyType: .next)
         
         // cria funçao com as propriedades da caixa de texto senha
         let senhaTextField: UITextField = {
@@ -39,6 +39,7 @@ class LoginView: ViewDefault {
             textField.placeholder = "Senha"
             textField.layer.cornerRadius = 12
             textField.translatesAutoresizingMaskIntoConstraints = false
+            textField.returnKeyType = .done
           //  textField.isSecureTextEntry = true
             
             return textField
@@ -48,17 +49,16 @@ class LoginView: ViewDefault {
         let logarButton = ButtonDefault(text: "Logar")
         
         // cria funçao com as propriedades do botao registrar
-        let registrarButton: UIButton = {
-            let button = UIButton()
-            //button.backgroundColor = UIColor(red: 94/255, green: 163/255, blue: 163/255, alpha: 1)
-            button.backgroundColor = .buttonBackgroundCollor
-            button.setTitle("Registrar", for: .normal)
-            button.layer.cornerRadius = 12
-            button.translatesAutoresizingMaskIntoConstraints = false
-            
-            return button
-        }()
-        
+        let registrarButton = ButtonDefault(text: "Registrar")
+
+
+        //organiza meus componentes na tela
+    override func setupVisualElement() {
+        super.setupVisualElement()
+        emailTextField.delegate = self
+        senhaTextField.delegate = self
+    
+    
         // adiciona todos os elementos visuais a view
         self.addSubview(loginImage)
         self.addSubview(imageLabel)
@@ -115,5 +115,24 @@ class LoginView: ViewDefault {
         @objc private func logarTap() {
             onLogarTap?()
         }
+    
+    
+}
+
+extension LoginView: UITextFieldDelegate {
+    
+    //configura o botão seguinte do teclado
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        if textField == emailTextField {
+            self.senhaTextField.becomeFirstResponder()
+            
+        } else {
+            textField.resignFirstResponder()
+        }
+        
+        return true
+    }
+    
 }
 

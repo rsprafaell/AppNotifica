@@ -14,6 +14,10 @@ class HomeCoordinator: Coordinator{
     
     lazy var homeViewController: HomeViewController = {
         let viewController = HomeViewController()
+        //adiciona o nome home na tabbar
+        viewController.tabBarItem.title = "Home"
+        viewController.tabBarItem.image = UIImage(systemName: "homekit")
+        
         return viewController
     }()
     
@@ -22,7 +26,8 @@ class HomeCoordinator: Coordinator{
     }
     
     func start() {
-        let ViewController = HomeViewController()
-        self.navigationController.pushViewController(ViewController, animated: true)
+    // se tirar tem q alterar no logincoordinator
+   //  let ViewController = HomeViewController()
+   //  self.navigationController.pushViewController(ViewController, animated: true)
     }
 }

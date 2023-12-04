@@ -54,7 +54,11 @@ class LoginCoordinator: Coordinator{
     private func gotoLogarTap() {
    //     let ViewController = HomeViewController()
     //    self.navigationController.pushViewController(ViewController, animated: true)
-        let coordinator = HomeCoordinator(navigationController: navigationController)
+        
+   //   alterar pra chamar a tabbar agora
+    // let coordinator = HomeCoordinator(navigationController: navigationController)
+        
+        let coordinator = TabbarCoordinator(navigationController: navigationController)
         coordinator.start()
     }
 }

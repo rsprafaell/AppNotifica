@@ -15,6 +15,7 @@ class SobreViewController: ViewControllerDefault {
     //cria uma variável que é do
     lazy var sobreView: SobreView = {
         let sobreView = SobreView()
+        
         return sobreView
     }()
     

@@ -10,12 +10,21 @@ import UIKit
 
 class TextFieldDefault : UITextField {
     
-    init (text: String) {
-        super.init(frame: .zero)
-        initTextFieldDefault(text: text)
-    }
+  //  init (text: String) {
+   //     super.init(frame: .zero)
+   //     initTextFieldDefault(text: text)
+
+  //  }
     
-    private func initTextFieldDefault (text: String) {
+    init(text: String, keyboardType: UIKeyboardType, returnKeyType: UIReturnKeyType ) {
+              super.init(frame: .zero)
+    
+        initTextFieldDefault (text: text, keyboardType: keyboardType, returnKeyType: returnKeyType)
+            
+          }
+    
+  //private func initTextFieldDefault (text: String) {
+    private func initTextFieldDefault (text: String, keyboardType: UIKeyboardType, returnKeyType: UIReturnKeyType) {
         self.placeholder = text
         self.backgroundColor = .textFieldBackgroudCollor
         self.layer.cornerRadius = 12
