@@ -9,13 +9,27 @@ import Foundation
 import UIKit
 
 class RegisterViewController: UIViewController{
+   
+    // MARK: Closure
+       
+    var  onLoginTap: (() -> Void)?
+   
+    lazy var registerView: RegisterView = {
+           let registerView = RegisterView()
+           
+           registerView.onLoginTap = {
+               self.onLoginTap?()
+           }
+           return registerView
+       }()
+    
     // variavel recebendo a tela de Registrar
-    var viewMain = RegisterView()
+  //  var viewMain = RegisterView()
     
     override func loadView() {
         // define que a nova tela a ser chamada será a Registerview
         
-        self.view = viewMain
+        self.view = registerView
     }
     
     // é executada quando est[a carregando

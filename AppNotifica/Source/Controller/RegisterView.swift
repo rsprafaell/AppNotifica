@@ -11,6 +11,9 @@ import UIKit
 class RegisterView: UIView {
 
 // MARK: - Initializers
+    
+    var  onLoginTap: (() -> Void)?
+    
     override init(frame: CGRect) {
         //chama o frame da superclasse
         super.init(frame: frame)
@@ -101,7 +104,8 @@ class RegisterView: UIView {
         self.addSubview(logarButton)
         self.addSubview(registrarButton)
         
-       
+        logarButton.addTarget(self, action: #selector(loginTap), for: .touchUpInside)
+
         
         // configura as restriçoes de layout para todos os elementos visuais
         NSLayoutConstraint.activate([
@@ -148,7 +152,10 @@ class RegisterView: UIView {
         ])
     }
   
-    
+    // MARK: - Actions BOTAO LOGAR
+          @objc private func loginTap() {
+              onLoginTap?()
+          }
     
 }
 

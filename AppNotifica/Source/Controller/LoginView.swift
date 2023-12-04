@@ -8,43 +8,16 @@
 import Foundation
 import UIKit
 
-class LoginView: UIView {
+class LoginView: ViewDefault {
     
+// MARK: Clousures
     var  onRegisterTap: (() -> Void)?
     var  onLogarTap: (() -> Void)?
     
-// MARK: - Initializers
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-    //  self.backgroundColor = .systemPurple
-        
-        // define a cor de fundo de acordo com o color set
-        self.backgroundColor = .backgroundCollor
-        
-        
-        setupVisualElement()
-        
-    }
-    
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
     
 // MARK: - Setup Visual Elements
     
-    func setupVisualElement() {
-        
-        // cria funçao com as propriedades da imagem login
-      /*  let loginImage: UIImageView = {
-            let image = UIImageView()
-            image.image = UIImage(named: "imageLogin")
-            image.contentMode = .scaleAspectFit
-            image.translatesAutoresizingMaskIntoConstraints = false
-            
-            return image
-            
-        }() */
+    override func setupVisualElement() {
         
         // Usando o Default:
         
@@ -52,17 +25,6 @@ class LoginView: UIView {
         
         
         // cria funçao com as propriedades da label no login
-        /*let imageLabel = {
-            let label = UILabel()
-            label.text = "Registre e gerencie as ocorrências do seu IF"
-            label.textColor = UIColor(red: 138/255, green: 255/255, blue: 142/255,  alpha: 1)
-            label.textAlignment = .center
-            label.font = UIFont(name: "SFProDisplay-Light", size: 17)
-            label.translatesAutoresizingMaskIntoConstraints = false
-            
-            return label
-        }()*/
-        
         //Usando o Default
         let imageLabel = ImageLabelDefault(text: "Registre e gerencie as ocorrências do seu IF!")
         
@@ -77,6 +39,7 @@ class LoginView: UIView {
             textField.placeholder = "Senha"
             textField.layer.cornerRadius = 12
             textField.translatesAutoresizingMaskIntoConstraints = false
+          //  textField.isSecureTextEntry = true
             
             return textField
         }()
