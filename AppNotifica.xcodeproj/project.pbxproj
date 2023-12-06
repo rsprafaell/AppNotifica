@@ -39,6 +39,7 @@
 		D3EF00262B1E00330046A8B2 /* NovaOcorrenciaCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EF00252B1E00330046A8B2 /* NovaOcorrenciaCoordinator.swift */; };
 		D3EF00282B1E00750046A8B2 /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EF00272B1E00750046A8B2 /* TabbarController.swift */; };
 		D3EF002A2B1E01000046A8B2 /* TabbarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EF00292B1E01000046A8B2 /* TabbarCoordinator.swift */; };
+		D3EF002C2B1E18360046A8B2 /* EscolherImagem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EF002B2B1E18360046A8B2 /* EscolherImagem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,7 @@
 		D3EF00252B1E00330046A8B2 /* NovaOcorrenciaCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaOcorrenciaCoordinator.swift; sourceTree = "<group>"; };
 		D3EF00272B1E00750046A8B2 /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
 		D3EF00292B1E01000046A8B2 /* TabbarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarCoordinator.swift; sourceTree = "<group>"; };
+		D3EF002B2B1E18360046A8B2 /* EscolherImagem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscolherImagem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,11 +150,12 @@
 				D393D92E2B0B884200858ED5 /* RegisterViewController.swift */,
 				D393D9382B10D5E200858ED5 /* HomeView.swift */,
 				D393D93A2B10D65F00858ED5 /* HomeViewController.swift */,
+				D3EF00272B1E00750046A8B2 /* TabbarController.swift */,
 				D3EF001F2B1DFE9F0046A8B2 /* SobreView.swift */,
 				D3EF001B2B1778620046A8B2 /* SobreViewController.swift */,
 				D3EF00212B1DFFD70046A8B2 /* NovaOcorrenciaViewController.swift */,
 				D3EF00232B1DFFED0046A8B2 /* NovaOcorrenciaView.swift */,
-				D3EF00272B1E00750046A8B2 /* TabbarController.swift */,
+				D3EF002B2B1E18360046A8B2 /* EscolherImagem.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				D393D9312B0B889A00858ED5 /* RegisterCoordinator.swift in Sources */,
 				D3E93C372B02692100B668B3 /* Color+.swift in Sources */,
 				D3EF002A2B1E01000046A8B2 /* TabbarCoordinator.swift in Sources */,
+				D3EF002C2B1E18360046A8B2 /* EscolherImagem.swift in Sources */,
 				D393D92F2B0B884200858ED5 /* RegisterViewController.swift in Sources */,
 				D393D93B2B10D65F00858ED5 /* HomeViewController.swift in Sources */,
 				D393D9392B10D5E200858ED5 /* HomeView.swift in Sources */,
