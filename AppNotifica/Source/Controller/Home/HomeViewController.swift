@@ -11,8 +11,19 @@ import UIKit
 
 class HomeViewController: UIViewController{
     
+    let viewModel: HomeViewModel
+    
+    init(viewModel: HomeViewModel) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     lazy var homeview: HomeView = {
-        let homeView = HomeView()
+        let homeView = HomeView(viewModel: viewModel)
         
         return homeView
     }()
@@ -21,6 +32,9 @@ class HomeViewController: UIViewController{
         self.view = homeview
     }
     
+    @objc func handleAdd() {
+        viewModel.didTapAdd()
+    }
     
   /*  var viewMain = HomeView()
     
@@ -36,6 +50,7 @@ class HomeViewController: UIViewController{
         self.title = "Home"
         self.navigationController?.navigationBar.prefersLargeTitles = true
     //    self.navigationItem.setHidesBackButton(true, animated: false)
+        navigationItem.rightBarButtonItem = .init(title: "Nova Ocorrência", style: .plain, target: self, action: #selector(handleAdd))
     }
     
     

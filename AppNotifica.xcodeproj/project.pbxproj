@@ -40,6 +40,8 @@
 		D3EF00282B1E00750046A8B2 /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EF00272B1E00750046A8B2 /* TabbarController.swift */; };
 		D3EF002A2B1E01000046A8B2 /* TabbarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EF00292B1E01000046A8B2 /* TabbarCoordinator.swift */; };
 		D3EF002C2B1E18360046A8B2 /* EscolherImagem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EF002B2B1E18360046A8B2 /* EscolherImagem.swift */; };
+		D3EF00362B20B1F20046A8B2 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EF00352B20B1F20046A8B2 /* HomeViewModel.swift */; };
+		D3EF00382B20B2090046A8B2 /* NovaOcorrenciaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EF00372B20B2090046A8B2 /* NovaOcorrenciaViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +80,8 @@
 		D3EF00272B1E00750046A8B2 /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
 		D3EF00292B1E01000046A8B2 /* TabbarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarCoordinator.swift; sourceTree = "<group>"; };
 		D3EF002B2B1E18360046A8B2 /* EscolherImagem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscolherImagem.swift; sourceTree = "<group>"; };
+		D3EF00352B20B1F20046A8B2 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		D3EF00372B20B2090046A8B2 /* NovaOcorrenciaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaOcorrenciaViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,18 +148,13 @@
 		D31EE3E02AFE71410034A6FA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				D31EE3E22AFE71690034A6FA /* LoginView.swift */,
-				D31EE3E42AFE717C0034A6FA /* LoginViewController.swift */,
-				D393D92C2B0B882D00858ED5 /* RegisterView.swift */,
-				D393D92E2B0B884200858ED5 /* RegisterViewController.swift */,
-				D393D9382B10D5E200858ED5 /* HomeView.swift */,
-				D393D93A2B10D65F00858ED5 /* HomeViewController.swift */,
-				D3EF00272B1E00750046A8B2 /* TabbarController.swift */,
-				D3EF001F2B1DFE9F0046A8B2 /* SobreView.swift */,
-				D3EF001B2B1778620046A8B2 /* SobreViewController.swift */,
-				D3EF00212B1DFFD70046A8B2 /* NovaOcorrenciaViewController.swift */,
-				D3EF00232B1DFFED0046A8B2 /* NovaOcorrenciaView.swift */,
-				D3EF002B2B1E18360046A8B2 /* EscolherImagem.swift */,
+				D3EF002E2B20B18B0046A8B2 /* Login */,
+				D3EF002F2B20B1940046A8B2 /* Register */,
+				D3EF00302B20B19D0046A8B2 /* Home */,
+				D3EF00312B20B1B00046A8B2 /* Tabbar */,
+				D3EF00322B20B1BB0046A8B2 /* Sobre */,
+				D3EF00332B20B1C40046A8B2 /* Nova Ocorrencia */,
+				D3EF00342B20B1CF0046A8B2 /* Escolher Imagem */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -194,6 +193,69 @@
 				D3E93C362B02692100B668B3 /* Color+.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D3EF002E2B20B18B0046A8B2 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				D31EE3E22AFE71690034A6FA /* LoginView.swift */,
+				D31EE3E42AFE717C0034A6FA /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		D3EF002F2B20B1940046A8B2 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				D393D92C2B0B882D00858ED5 /* RegisterView.swift */,
+				D393D92E2B0B884200858ED5 /* RegisterViewController.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		D3EF00302B20B19D0046A8B2 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D393D9382B10D5E200858ED5 /* HomeView.swift */,
+				D393D93A2B10D65F00858ED5 /* HomeViewController.swift */,
+				D3EF00352B20B1F20046A8B2 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D3EF00312B20B1B00046A8B2 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				D3EF00272B1E00750046A8B2 /* TabbarController.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		D3EF00322B20B1BB0046A8B2 /* Sobre */ = {
+			isa = PBXGroup;
+			children = (
+				D3EF001F2B1DFE9F0046A8B2 /* SobreView.swift */,
+				D3EF001B2B1778620046A8B2 /* SobreViewController.swift */,
+			);
+			path = Sobre;
+			sourceTree = "<group>";
+		};
+		D3EF00332B20B1C40046A8B2 /* Nova Ocorrencia */ = {
+			isa = PBXGroup;
+			children = (
+				D3EF00232B1DFFED0046A8B2 /* NovaOcorrenciaView.swift */,
+				D3EF00212B1DFFD70046A8B2 /* NovaOcorrenciaViewController.swift */,
+				D3EF00372B20B2090046A8B2 /* NovaOcorrenciaViewModel.swift */,
+			);
+			path = "Nova Ocorrencia";
+			sourceTree = "<group>";
+		};
+		D3EF00342B20B1CF0046A8B2 /* Escolher Imagem */ = {
+			isa = PBXGroup;
+			children = (
+				D3EF002B2B1E18360046A8B2 /* EscolherImagem.swift */,
+			);
+			path = "Escolher Imagem";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,6 +358,8 @@
 				D3EF001E2B1DFE390046A8B2 /* SobreCoordinator.swift in Sources */,
 				D393D9372B0E41B100858ED5 /* ButtonDefault.swift in Sources */,
 				D3EF00222B1DFFD70046A8B2 /* NovaOcorrenciaViewController.swift in Sources */,
+				D3EF00382B20B2090046A8B2 /* NovaOcorrenciaViewModel.swift in Sources */,
+				D3EF00362B20B1F20046A8B2 /* HomeViewModel.swift in Sources */,
 				D393D93D2B10DB1A00858ED5 /* HomeCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -17,17 +17,31 @@ class TabbarCoordinator : Coordinator {
     func start() {
         //inicializa o TabbarController
         let tabbarController = TabbarController()
-        
+        tabbarController.modalPresentationStyle = .overFullScreen
         //inicializar as views da tabbar homeViewCoordinator
-        let homeViewCoordinator = HomeCoordinator(navigationController: self.navigationController)
+        let homeNavigation = UINavigationController()
         
-        let novaOcorrenciaViewCoordinator = NovaOcorrenciaCoordinator(navigationController: self.navigationController)
+        let homeViewCoordinator = HomeCoordinator(navigationController: homeNavigation)
+        homeViewCoordinator.start()
         
-        let sobreViewCoordinator = SobreCoordinator(navigationController: self.navigationController)
+     //   let novaOcorrenciaViewCoordinator = NovaOcorrenciaCoordinator(navigationController: self.navigationController)
+        
+     //   let sobreViewCoordinator = SobreCoordinator(navigationController: self.navigationController)
+        
+        let sobreNavigation = UINavigationController()
+        
+        let sobreViewCoordinator = SobreCoordinator(navigationController: sobreNavigation)
+        sobreViewCoordinator.start()
+        
+        let navigationControllers = [homeNavigation, sobreNavigation]
                 
         //passa uma lista de view que serão mostradas na tabbar
-        tabbarController.setViewControllers([homeViewCoordinator.homeViewController, novaOcorrenciaViewCoordinator.novaOcorrenciaViewController,sobreViewCoordinator.sobreViewController], animated: true)
+       // tabbarController.setViewControllers([homeViewCoordinator.homeViewController, novaOcorrenciaViewCoordinator.novaOcorrenciaViewController,sobreViewCoordinator.sobreViewController], animated: true)
         
-        self.navigationController.pushViewController(tabbarController, animated: true)
+       // tabbarController.setViewControllers([homeViewCoordinator.homeViewController,sobreViewCoordinator.sobreViewController], animated: true)
+        
+        tabbarController.setViewControllers(navigationControllers, animated: true)
+        
+        self.navigationController.present(tabbarController, animated: true)
     }
 }

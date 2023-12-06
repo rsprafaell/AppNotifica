@@ -8,30 +8,49 @@
 import Foundation
 import UIKit
 
-
+/*
 class HomeView: UIView {
     // MARK: - Initializers
     override init(frame: CGRect) {
         //chama o frame da superclasse
         super.init(frame: frame)
-        //  self.backgroundColor = .systemPurple
-   
         // define a cor de fundo de acordo com o color set
         self.backgroundColor = .backgroundCollor
         
         setupVisualElement()
         
     }
-    
-    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    
     
     func setupVisualElement() {
      //   setupVisualElement()
     }
 
+}
+*/
+
+class HomeView: ViewDefault {
+    
+    //MARK: - Closure
+    
+    //MARK: - Porports
+    
+    //MARK: - Inits
+    
+    var viewModel: HomeViewModel
+    
+    init(viewModel: HomeViewModel) {
+        self.viewModel = viewModel
+        super.init(frame: .zero)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    override func setupVisualElement() {
+        
+    }
 }
