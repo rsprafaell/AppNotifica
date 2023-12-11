@@ -9,12 +9,20 @@ import Foundation
 import UIKit
 
 class HomeViewModel {
+
     
     var coordinator: HomeCoordinator
+    var ocorrencias: [Ocorrencia] = []
     
     init(coordinator: HomeCoordinator) {
         self.coordinator = coordinator
     }
+    
+    func fetchData() {
+        self.ocorrencias
+        
+    }
+    
     
     func didTapAdd(){
         coordinator.presentNovaOcorrencia()

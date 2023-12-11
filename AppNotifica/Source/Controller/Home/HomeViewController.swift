@@ -22,14 +22,14 @@ class HomeViewController: UIViewController{
         fatalError("init(coder:) has not been implemented")
     }
     
-    lazy var homeview: HomeView = {
+    lazy var homeView: HomeView = {
         let homeView = HomeView(viewModel: viewModel)
         
         return homeView
     }()
     
     override func loadView() {
-        self.view = homeview
+        self.view = homeView
     }
     
     @objc func handleAdd() {
@@ -47,9 +47,15 @@ class HomeViewController: UIViewController{
     // é executada quando est[a carregando
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Home"
+        self.title = "Ocorrências"
         self.navigationController?.navigationBar.prefersLargeTitles = true
+    //    Esconder o botáo de voltar
     //    self.navigationItem.setHidesBackButton(true, animated: false)
+        
+        
+      refreshData()
+        
+        
         navigationItem.rightBarButtonItem = .init(title: "Nova Ocorrência", style: .plain, target: self, action: #selector(handleAdd))
     }
     

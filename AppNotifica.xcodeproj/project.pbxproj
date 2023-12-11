@@ -17,6 +17,8 @@
 		D31EE3E52AFE717C0034A6FA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31EE3E42AFE717C0034A6FA /* LoginViewController.swift */; };
 		D31EE3E72AFE718E0034A6FA /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31EE3E62AFE718E0034A6FA /* Coordinator.swift */; };
 		D31EE3E92AFE719B0034A6FA /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31EE3E82AFE719B0034A6FA /* LoginCoordinator.swift */; };
+		D33F07AC2B2736ED0045F820 /* Ocorrencia.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33F07AB2B2736ED0045F820 /* Ocorrencia.swift */; };
+		D37A54F32B2743B800B25BEC /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37A54F22B2743B800B25BEC /* DataManager.swift */; };
 		D393D9272B07A5A800858ED5 /* ImageDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = D393D9262B07A5A800858ED5 /* ImageDefault.swift */; };
 		D393D92B2B07AA4500858ED5 /* ImageLabelDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = D393D92A2B07AA4500858ED5 /* ImageLabelDefault.swift */; };
 		D393D92D2B0B882D00858ED5 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D393D92C2B0B882D00858ED5 /* RegisterView.swift */; };
@@ -57,6 +59,8 @@
 		D31EE3E42AFE717C0034A6FA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D31EE3E62AFE718E0034A6FA /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		D31EE3E82AFE719B0034A6FA /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		D33F07AB2B2736ED0045F820 /* Ocorrencia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ocorrencia.swift; sourceTree = "<group>"; };
+		D37A54F22B2743B800B25BEC /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		D393D9262B07A5A800858ED5 /* ImageDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDefault.swift; sourceTree = "<group>"; };
 		D393D92A2B07AA4500858ED5 /* ImageLabelDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLabelDefault.swift; sourceTree = "<group>"; };
 		D393D92C2B0B882D00858ED5 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
@@ -183,6 +187,7 @@
 				D393D9362B0E41B100858ED5 /* ButtonDefault.swift */,
 				D3EF00172B176E410046A8B2 /* ViewControllerDefault.swift */,
 				D3EF00192B176E500046A8B2 /* ViewDefault.swift */,
+				D37A54F22B2743B800B25BEC /* DataManager.swift */,
 			);
 			path = Infrastructure;
 			sourceTree = "<group>";
@@ -219,6 +224,7 @@
 				D393D9382B10D5E200858ED5 /* HomeView.swift */,
 				D393D93A2B10D65F00858ED5 /* HomeViewController.swift */,
 				D3EF00352B20B1F20046A8B2 /* HomeViewModel.swift */,
+				D33F07AB2B2736ED0045F820 /* Ocorrencia.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -338,11 +344,13 @@
 				D3EF002C2B1E18360046A8B2 /* EscolherImagem.swift in Sources */,
 				D393D92F2B0B884200858ED5 /* RegisterViewController.swift in Sources */,
 				D393D93B2B10D65F00858ED5 /* HomeViewController.swift in Sources */,
+				D37A54F32B2743B800B25BEC /* DataManager.swift in Sources */,
 				D393D9392B10D5E200858ED5 /* HomeView.swift in Sources */,
 				D3EF00202B1DFE9F0046A8B2 /* SobreView.swift in Sources */,
 				D31EE3CB2AFE67D00034A6FA /* AppDelegate.swift in Sources */,
 				D31EE3E92AFE719B0034A6FA /* LoginCoordinator.swift in Sources */,
 				D393D92B2B07AA4500858ED5 /* ImageLabelDefault.swift in Sources */,
+				D33F07AC2B2736ED0045F820 /* Ocorrencia.swift in Sources */,
 				D3EF001A2B176E500046A8B2 /* ViewDefault.swift in Sources */,
 				D3EF00282B1E00750046A8B2 /* TabbarController.swift in Sources */,
 				D31EE3E72AFE718E0034A6FA /* Coordinator.swift in Sources */,

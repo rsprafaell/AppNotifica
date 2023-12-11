@@ -15,4 +15,9 @@ class NovaOcorrenciaViewModel {
     init(coordinator: HomeCoordinator) {
         self.coordinator = coordinator
     }
+    
+    func didTapSave(ocorrencia: Ocorrencia) {
+        DataManager.shared.add(ocorrencia: ocorrencia)
+        coordinator.continueAfterNovaOcorrencia()
+    }
 }
